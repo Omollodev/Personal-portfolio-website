@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef3896073e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="Home">
+    <div class="container">
+        <nav>
+            <img src="Images/cyber-safe.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Achievements">My Achievements</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Cyberscurity<br>
+            <h1>Hi I'm <span>Devox Otieno</span><br> A Cyber-Security Engineer <br> and Ethical-Hacker.</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------About---------- --> 
+<div id="About">
+    <div class="Container">
+        <div class="row">  
+            <div class="about-col-1">
+                <img src="Images/Nobody.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Sub-title">About Me</h1>
+                <p>I am a proactive and self-motivated individual with a strong interest in cybersecurity and penetration testing.
+                    I have demonstrated a commitment to continuous learning and skill development through various online platforms such as TryHackMe, Cisco Networking Academy, and Udemy.
+                    I am engagement in hands-on labs, completion of courses, and participation in challenges indicate a genuine passion for understanding and addressing cybersecurity challenges.<br><br>
+
+                    Despite not having a job experience, I have actively sought out opportunities to gain practical experience through personal projects, freelance work, and participation in cybersecurity communities. 
+                    My ability to collaborate with peers and apply the knowledge in real-world scenarios showcases your adaptability and problem-solving skills.<br><br>
+                    
+                    Overall, I have appear to be a dedicated and resourceful individual who is well-prepared to pursue a career in cybersecurity or penetration testing, with a strong foundation of theoretical knowledge and practical experience.<br></p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+        
+                    <div class="tab-contents active-tabs" id="skills">
+                        <ul>
+                            <li><span>penetration Tester</span><br>Metasploit, Nmap, Wireshark</li>
+                            <li><span>Web Application </span><br>OWASP Top 10,WAFs</li>
+                            <li><span>Networking Security</span><br>Intrusion detection/prevention system [IDS/IPS]</li>
+                            <li><span>Security Tools</span><br>SIEM, Burpsuite</li>
+                            <li><span>Operating system</span><br>Windows, Linuxs</li>
+                            <li><span>Programming</span> <br>Python, web-scripting, SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - present</span> <br>Cyber safe/li>
+                            <li><span>2023 - Current</span><br>Self-Study & Online Learning </li>
+                            <li><span>Personal Projects </span><br>cybersecurity Challenges, Capture the flag.</li>
+                            <li><span>2022 - 2023</span><br>Team leader at ICT profession training centre</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Datascience at Kenyatta University</li>
+                            <li><span>2023 - 2024 </span><br>Cisco Skills for alls </li>
+                            <li><span>2022 - 2023</span><br>Huawei Academy</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------services---------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="Sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-hackerrank"></i>
+            <h2>Ethical Hacking</h2>
+            <p>My goal is to contribute to the greater good by sharing knowledge, providing guidance, and offering practical solutions to cybersecurity challenges.<br> 
+                Whether it's through volunteering, mentoring, or participating in community events, I am dedicated to empowering others with the skills and awareness needed to navigate the complex landscape of cybersecurity.<br><br>
+
+                By offering services back to the community, I aim to foster a culture of collaboration, education, and collective responsibility in safeguarding our digital.<br>
+                Together, we can build a stronger and more resilient cybersecurity community for the benefit of all.<br><br>
+            </p>
+            <a href="#">https://skillsforall.com/course/ethical-hacker</a>
+          </div> 
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2>Networking</h2>
+            <p>My goal is to contribute to the greater good by sharing knowledge, providing guidance, and offering practical solutions to cybersecurity challenges and Network Administrator.<br> 
+                Whether it's through volunteering, mentoring, or participating in community events, I am dedicated to empowering others with the skills and awareness needed to navigate the complex landscape of Networking.<br><br>
+
+                By offering services back to the community, I aim to foster a culture of collaboration, education, and collective responsibility in safeguarding our digital environments.<br>
+                Together, we can build a stronger and more resilient network administrator and cybersecurity community for the benefit of all.<br><br>
+            </p>
+            <a href="#">https://skillsforall.com/course/networking-basics</a><br><br>
+            <a href="#">https://tryhackme.com/r/room/introtonetworking</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>cybersecurity</h2>
+                <p>
+                    As a cybersecurity enthusiast and aspiring penetration tester, I possess a diverse set of skills honed through hands-on learning and practical experience.<br> 
+                    My proficiency in ethical hacking, penetration testing, and vulnerability assessment allows me to identify and mitigate security risks effectively.<br> 
+                    Additionally, my expertise in network security, web application security, and operating system security equips me to implement robust defenses against cyber threats.<br><br>
+    
+                    I am adept at utilizing a variety of security tools and technologies, including Nessus, Metasploit, Nmap, Wireshark, and Burp Suite, to assess and enhance the security posture of systems and networks.<br> 
+                    With a strong foundation in risk analysis and incident response, I am well-equipped to handle security incidents and mitigate their impact.<br><br>
+                </p>
+                <a href="#">https://tryhackme.com/r/room/introtooffensivesecurity</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------Portfolio------------- -->
+<div id="Achievements">
+    <div class="container">
+        <h1 class="Sub-title">My Achievements</h1>
+        <div class="Achievements-lists">
+            <div class="Achievement">
+                <img src="Images/Achievement_1.png" alt="">
+                <div class="layer">
+                    <h3>Etical Hacking</h3>
+                    <p>The ceritificate certifies that I do have knowledge and unsderstanding in based as Ethical hacker.<br>
+                        "I uncover vulnerabilities to strengthen defenses."<br>
+                        "Finding flaws to fortify security."<br>
+                        "Safeguarding systems through ethical probing."<br>
+                    </p>
+                    <a href="https://www.credly.com/badges/884ae70d-4256-4749-b9bf-0b4586d07433/public_url"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="Achievement">
+                <img src=  "Images/Achievement_2.jpg" alt="">
+                <div class="layer">
+                    <h3>Networking</h3>
+                    <p>The ceritificate certifies that I do have the basic knowledge of inner working of network devices.<br>
+                        "I architect networks for seamless connectivity."<br>
+                        "Building bridges for digital connections."<br>
+                        "Optimizing networks for peak performance."<br>
+                    </p>
+                    <a href="https://www.credly.com/badges/78e78235-0e52-48f0-bf98-ab7485c91cfe/public_url"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="Achievement">
+                <img src="Images/Achievemt_3.png" alt="">
+                <div class="layer">
+                    <h3>Cyberscurity</h3>
+                    <p>The ceritificate certifies that I do have the basic knowledge of cybersecurity.<br>
+                        "I defend against digital threats."<br>
+                        "Protecting data with vigilant oversight."<br>
+                        "Securing systems with strategic <br>
+                    </p>
+                    <a href="https://tryhackme.com/r/room/careersincyber"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------Contacts---------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Conatct Me</h1>
+                <p>
+                    <a href="https://mailto:omollodev@proton.me"><i class="fa-solid fa-envelope"></i></a> omollodev@proton.me
+                </p>
+                <p>
+                    <a href="https://contacts.google.com/search/0713318602"></a><i class="fa-solid fa-phone"></i> +254713318602
+                </p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/DevTech87"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://github.com/Omollodev"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/devox-omollo-7452b928b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/CV.pdf" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter your full name" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+     <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Divox.2024</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tabs")
+        }    
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tabs")
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0"
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px"
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzPr_VLpM0zrd25YrA5jrgxeJGh9ZufQbCm33XIFOQdLnm3TAKSnogsSG42d6SWke2H/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message successfully submitted!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },250)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
