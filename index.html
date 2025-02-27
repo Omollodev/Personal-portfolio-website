@@ -1,409 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ef3896073e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ef3896073e.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
+  <body>
+    <!-- Home Section -->
     <div id="Home">
-        <div class="container">
-            <nav>
-                <img src="Images/cyber-safe.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Achievements">My Achievements</a></li>
-                    <li><a href="#Contact">Contact Me</a></li>
-                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Hack like a black hat hackers & secure system like a cybersecurity experts<br>
-                <h1>Hi I'm <span>Devox Otieno</span><br> A Cyber-Security profession <br> and a Pentester.</h1>
-            </div>
+      <nav>
+        <a href="#Home">
+          <img src="Images/cyber-safe.png" class="logo" alt="Logo" />
+        </a>
+        <ul id="sidemenu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#Achievements">Achievements</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <i class="fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+        <div class="menu-btn" onclick="openmenu()">
+          <i class="fa-solid fa-bars"></i>
         </div>
+      </nav>
+
+      <div class="container">
+        <div class="header-content">
+          <div class="header-text">
+            <p>Cybersecurity Enthusiast & Ethical Hacker</p>
+            <h1>
+              Hi, I'm <span>Devox Otieno Omollo</span><br />A Digital Security
+              Engineer,and<br />
+              a Researcher
+            </h1>
+          </div>
+          <div class="header-image">
+            <img src="Images/Nobody.jpg" />
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- ---------About---------- -->
-
+    <!-- About Section -->
     <div id="About">
-        <div class="Container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/Nobody.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="Sub-title">About Me</h1>
-                    <p>
-                        I am motivated and self-taught Cyber-Security enthusiast with hands-on experience in penetration
-                        testing, </br>
-                        bug bounty hunting and security operations. proficient in various programming languages,<br>
-                        networking concepts, actively participating in CTF challengesand vulnerabilities disclourse
-                        programs<br>
-                        Currently pursuing diploma in computer science and mathematics, with a passion in improving
-                        cybersecurity<br>
-                        defenses and contributing to the security communnity.
-
-                    </p>
-
-                    <div class="tab-title">
-                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('certificaton')">Certificatons</p>
-                    </div>
-
-                    <div class="tab-contents active-tabs" id="skills">
-                        <ul>
-                            <li><span>Penetration Testing</span><br>
-                                <ol>Web Security</ol>
-                                <ol>vulnerability Assessment</ol>
-                                <ol>Exploitation</ol>
-                                <ol>CTF Challenges</ol>
-                            </li>
-
-                            <li><span>Networking</span><br>
-                                <ol>Routers and Switches</ol>
-                                <ol>TCP/IP</ol>
-                                <ol>Firewall</ol>
-                                <ol>DNS</ol>
-                            </li>
-
-                            <li><span>Operating system</span><br>
-                                <ol>Windows</ol>
-                                <ol>Linuxs(Kali,Ubuntu)</ol>
-                                <ol>Mac OS</ol>
-                            </li>
-
-                            <li><span>Programming Languages</span> <br>
-                                <ol>Python</ol>
-                                <ol>Bash Scripting</ol>
-                                <ol>Web Scritping</ol>
-                                <ol>SQL</ol>
-                                <ol>Docker & Kubernetes</ol>
-                            </li>
-
-                            <li><span>Tools & Frameworks</span> <br>
-                                <ol>Nmap</ol>
-                                <ol>Wireshark</ol>
-                                <ol>Packettracer</ol>
-                                <ol>Metasploit</ol>
-                                <ol>Burp Suite</ol>
-                                <ol>OWASP ZAP</ol>
-                                <ol>Ghidra</ol>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2024 - present</span> = <b>Hackerone & Bugcrowd</b>
-                                <ol>
-                                    <p> - vulnerabilities disclourse programs & Bug Bounty Hunting
-                                    <ol><i>participated in VDP, identifying and reporting security flaws in web
-                                            application.<br>
-                                            successfully found and documented vulnerabilities, contributing to the
-                                            improvement of <br>
-                                            security for mutliple organization
-                                        </i>
-                                    </ol>
-                                </ol>
-                                </p>
-                                </ol>
-                            </li>
-
-                            <li><span>2022 - 2023</span> = <b>Hacker101 CTF Challenges </b>
-                                <ol>
-                                    <p> - participated in Hacker101 CTF
-                                    <ol><i> Regularly participated in Capture The Flag (CTF) to sharpen skills in
-                                            various aspect of cybersecurity <br>
-                                            Which I majorly focused on web security challenges, cryptography, reverse
-                                            engineering <br>
-                                            and exploitation techniques.
-                                        </i>
-                                    </ol>
-                                    </p>
-                                </ol>
-                            </li>
-
-                            <li><span>2020 - 2023</span> = <b> Self-taught Cyber-Security & Leaner </b>
-                                <ol>
-                                    <p> - Hack The Box Academy & Try Hack Me </p>
-                                    <ol>
-                                        <i>
-                                            Completed Bug Bounty Hunter, Certified Penetration tester, Soc Analyst and
-                                            Incident Response Team Certificatons. <br>
-                                            Engange in hands-on labs and challenges, focuesing on ethical-hacking and
-                                            Network Security. <br>
-                                            Developed skills in indentifying and exploiting vulnerabilities,
-                                            particularly in web application security. <br> 
-                                            Yearly participates in the Advent of Cyber on Try Hack Me for boosting skills. 
-                                        </i>
-                                    </ol>
-                                </ol>
-                            </li>
-
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2024 - Current</span><br>Datascience at Kenyatta University</li>
-                            <li><span>2023 - 2024 </span><br>Cisco Network Academy </li>
-                            <li><span>2022 - 2023</span><br>Huawei Academy</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="certificaton">
-                        <ul>
-                            <li><span>Hack The Box</span><br>
-                                <ol>Bug Bounty Hunter Certifications.</ol>
-                                <ol>Certified Penetration Tester</ol>
-                                <ol>SOC Analyst</ol>
-                            </li>
-
-                            <li><span>Try Hack Me</span><br>
-                                <ol>Red Teamer</ol>
-                                <ol>Incident Response Team</ol>
-                                <ol>Reverse Engineering</ol>
-                            </li>
-
-                            <li><span>Cisco Network Academy</span><br>
-                                <ol>Networking Basics</ol>
-                                <ol>CCNA</ol>
-                                <ol>CyberSecurity</ol>
-                            </li>
-
-                            <li><span>Huawei ICT Academy</span> <br>
-                                <ol>Networking Certification</ol>
-                            </li>
-
-                            <li><span>Udemy</span> <br>
-                                <ol>Programming Certification</ol>
-                            </li>
-                            <li><span>Portswigger</span> <br>
-                                <ol>Website Hacking/ol>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                </div>
+      <div class="container">
+        <h1 class="Sub-title">About Me</h1>
+        <div class="row">
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I am a motivated cybersecurity enthusiast with hands-on
+                experience in penetration testing, ethical hacking, and cloud
+                security. Proficient in network security, vulnerability
+                assessment, and secure system architecture, I am eager to apply
+                my technical expertise and problem-solving skills in a dynamic
+                cybersecurity environment.
+              </p>
+              <p>
+                Currently pursuing a Diploma in Computer Science and Mathematics
+                at Zetech University, I am actively engaged in CTF challenges,
+                security research, and cybersecurity awareness programs.
+              </p>
             </div>
+            <div class="about-tabs">
+              <div class="tab-title">
+                <p class="tab-links active-links" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+                <p class="tab-links" onclick="opentab('certificaton')">
+                  Certifications
+                </p>
+              </div>
+
+              <div class="tab-contents active-tabs" id="skills">
+                <ul>
+                  <li>
+                    <span>Penetration Testing & Vulnerability Assessment</span
+                    ><br />
+                    <ol>
+                      Web Security
+                    </ol>
+                    <ol>
+                      Exploitation Techniques
+                    </ol>
+                    <ol>
+                      Ethical Hacking
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Networking & Security</span><br />
+                    <ol>
+                      TCP/IP, DNS
+                    </ol>
+                    <ol>
+                      Firewalls, IDS/IPS, SIEM
+                    </ol>
+                    <ol>
+                      Packet Analysis
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Operating Systems</span><br />
+                    <ol>
+                      Linux (Kali, Ubuntu)
+                    </ol>
+                    <ol>
+                      Windows
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Programming & Scripting</span><br />
+                    <ol>
+                      Python, Bash, SQL
+                    </ol>
+                    <ol>
+                      Web Scripting
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Security Tools & Frameworks</span><br />
+                    <ol>
+                      Nmap, Wireshark, Burp Suite
+                    </ol>
+                    <ol>
+                      OWASP ZAP, Metasploit
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Containerization & Cloud Computing</span><br />
+                    <ol>
+                      Docker, Kubernetes
+                    </ol>
+                    <ol>
+                      AWS, Microsoft Azure
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Version Control & Collaboration</span><br />
+                    <ol>
+                      Git, GitHub
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>JAN 2024 - AUG 2024</span><br /><b
+                      >Kosamtech Organization</b
+                    >
+                    <ol>
+                      <p>Help Desk Technician → Cybersecurity Researcher</p>
+                      <ol>
+                        <i>
+                          Provided first-level technical support and
+                          troubleshooting for software and network issues.<br />
+                          Ensured timely resolution of user issues while
+                          maintaining high customer service standards.<br />
+                          Transitioned into a cybersecurity role by leveraging
+                          hands-on problem-solving and technical expertise.<br />
+                          Conducted vulnerability assessments and penetration
+                          tests to identify and remediate security flaws.<br />
+                          Implemented secure coding practices and collaborated
+                          with software engineering teams.
+                        </i>
+                      </ol>
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>2023 - Current</span><br />
+                    <b>Bug Bounty Programs (HackerOne, Bugcrowd, Intigriti)</b>
+                    <ol>
+                      <p>Independent Bug Bounty Hunter</p>
+                      <ol>
+                        <i>
+                          Participated in various bug bounty programs to
+                          identify and report security vulnerabilities in web
+                          applications and systems.<br />
+                          Discovered and responsibly disclosed vulnerabilities
+                          such as XSS, SQL Injection, and CSRF.<br />
+                          Collaborated with development teams to provide
+                          remediation guidance and ensure timely fixes.<br />
+                          Ranked in the top 10% of contributors on HackerOne for
+                          consistent high-quality submissions.<br />
+                          Earned recognition and rewards for identifying
+                          critical vulnerabilities in high-profile programs.
+                        </i>
+                      </ol>
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>2022 till current</span><br /><b
+                      >Hacker101 CTF Challenges & Bug Bounty programs</b
+                    >
+                    <ol>
+                      <p>Participated in Capture The Flag (CTF) competitions</p>
+                      <ol>
+                        <i>
+                          Regularly participated in CTF challenges to sharpen
+                          skills in various aspects of cybersecurity.<br />
+                          Focused on web security challenges, cryptography,
+                          reverse engineering, and exploitation techniques.<br />
+                          Developed practical skills in identifying and
+                          exploiting vulnerabilities in controlled environments.
+                        </i>
+                      </ol>
+                    </ol>
+                  </li>
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2024 - Present</span><br />Diploma in Computer Science
+                    and Mathematics at Zetech University
+                  </li>
+                  <li><span>2023 - 2024</span><br />Cisco Network Academy</li>
+                  <li><span>2022 - 2023</span><br />Huawei ICT Academy</li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="certificaton">
+                <ul>
+                  <li>
+                    <span>Hack The Box Academy</span><br />
+                    <ol>
+                      Bug Bounty Hunter
+                    </ol>
+                    <ol>
+                      Certified Penetration Tester
+                    </ol>
+                    <ol>
+                      SOC Analyst
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>TryHackMe</span><br />
+                    <ol>
+                      Red Teamer
+                    </ol>
+                    <ol>
+                      Incident Response
+                    </ol>
+                    <ol>
+                      Reverse Engineering
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Cisco Networking Academy</span><br />
+                    <ol>
+                      Networking Basics
+                    </ol>
+                    <ol>
+                      CCNA
+                    </ol>
+                    <ol>
+                      Cybersecurity
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Huawei ICT Academy</span><br />
+                    <ol>
+                      Networking Certification
+                    </ol>
+                  </li>
+
+                  <li>
+                    <span>Udemy</span><br />
+                    <ol>
+                      Programming Certification
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- ----------services---------- -->
-
-    <div id="Services">
-        <div class="container">
-            <h1 class="Sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-brands fa-hackerrank"></i>
-                    <h2>Ethical Hacking</h2>
-                    <p>My goal is to contribute to the greater good by sharing knowledge, providing guidance, and
-                        offering practical solutions to cybersecurity challenges.<br>
-                        Whether it's through volunteering, mentoring, or participating in community events, I am
-                        dedicated to empowering others with the skills and awareness needed to navigate the complex
-                        landscape of cybersecurity.<br><br>
-
-                        By offering services back to the community, I aim to foster a culture of collaboration,
-                        education, and collective responsibility in safeguarding our digital.<br>
-                        Together, we can build a stronger and more resilient cybersecurity community for the benefit of
-                        all.<br><br>
-                    </p>
-                    <a href="#">https://skillsforall.com/course/ethical-hacker</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-server"></i>
-                    <h2>Networking</h2>
-                    <p>My goal is to contribute to the greater good by sharing knowledge, providing guidance, and
-                        offering practical solutions to cybersecurity challenges and Network Administrator.<br>
-                        Whether it's through volunteering, mentoring, or participating in community events, I am
-                        dedicated to empowering others with the skills and awareness needed to navigate the complex
-                        landscape of Networking.<br><br>
-
-                        By offering services back to the community, I aim to foster a culture of collaboration,
-                        education, and collective responsibility in safeguarding our digital environments.<br>
-                        Together, we can build a stronger and more resilient network administrator and cybersecurity
-                        community for the benefit of all.<br><br>
-                    </p>
-                    <a href="#">https://skillsforall.com/course/networking-basics</a><br><br>
-                    <a href="#">https://tryhackme.com/r/room/introtonetworking</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-robot"></i>
-                    <h2>cybersecurity</h2>
-                    <p>
-                        As a cybersecurity enthusiast and aspiring penetration tester, I possess a diverse set of skills
-                        honed through hands-on learning and practical experience.<br>
-                        My proficiency in ethical hacking, penetration testing, and vulnerability assessment allows me
-                        to identify and mitigate security risks effectively.<br>
-                        Additionally, my expertise in network security, web application security, and operating system
-                        security equips me to implement robust defenses against cyber threats.<br><br>
-
-                        I am adept at utilizing a variety of security tools and technologies, including Nessus,
-                        Metasploit, Nmap, Wireshark, and Burp Suite, to assess and enhance the security posture of
-                        systems and networks.<br>
-                        With a strong foundation in risk analysis and incident response, I am well-equipped to handle
-                        security incidents and mitigate their impact.<br><br>
-                    </p>
-                    <a href="#">https://tryhackme.com/r/room/introtooffensivesecurity</a>
-                </div>
-            </div>
+    <!-- Technical Projects Section -->
+    <div id="project">
+      <div class="container">
+        <h1 class="Sub-title">Technical Projects</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Home Office Network Setup</h2>
+            <p>
+              Configured and secured a home office network, gaining hands-on
+              networking experience.
+              <br /><br />
+              Implemented firewalls, VLANs, and security policies for secure
+              data transmission.
+              <br /><br />
+              Applied best practices for network segmentation and access control
+              to enhance security posture.
+            </p>
+            <a href="#">View Project Details</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-bug"></i>
+            <h2>Web Security Testing Lab</h2>
+            <p>
+              Developed a local penetration testing environment using Docker
+              containers.
+              <br /><br />
+              Deployed OWASP Juice Shop & DVWA for web security testing and
+              ethical hacking practice.
+              <br /><br />
+              Created a controlled environment to safely practice exploitation
+              techniques and vulnerability assessment.
+            </p>
+            <a href="#">View Project Details</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>SIEM Implementation</h2>
+            <p>
+              Implemented and monitored Splunk & Suricata for real-time
+              intrusion detection.
+              <br /><br />
+              Analyzed network traffic & security logs to detect potential
+              threats.
+              <br /><br />
+              Configured alerts and dashboards to provide comprehensive
+              visibility into security events.
+            </p>
+            <a href="#">View Project Details</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-docker"></i>
+            <h2>Containerization & Cloud Security</h2>
+            <p>
+              Built secure, containerized environments using Docker &
+              Kubernetes.
+              <br /><br />
+              Deployed test applications on AWS & Microsoft Azure, gaining
+              experience in cloud security best practices.
+              <br /><br />
+              Implemented security controls and monitoring for cloud-based
+              infrastructure.
+            </p>
+            <a href="#">View Project Details</a>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- ----------Portfolio------------- -->
+    <!-- Soft Skills Section -->
+    <div id="soft-skills">
+      <div class="container">
+        <h1 class="Sub-title">Soft Skills</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-brain"></i>
+            <h2>Critical Thinking & Problem Solving</h2>
+            <p>
+              Analytical approach to identifying and resolving complex security
+              challenges.
+              <br /><br />
+              Ability to think creatively when standard solutions don't apply.
+              <br /><br />
+              Experience troubleshooting complex technical issues in
+              high-pressure environments.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-comments"></i>
+            <h2>Effective Communication</h2>
+            <p>
+              Skilled at translating technical concepts into understandable
+              terms for non-technical stakeholders.
+              <br /><br />
+              Experience documenting security findings and recommendations in
+              clear, actionable reports.
+              <br /><br />
+              Ability to communicate effectively across different organizational
+              levels.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-users"></i>
+            <h2>Teamwork & Collaboration</h2>
+            <p>
+              Experience working with cross-functional teams to implement
+              security solutions.
+              <br /><br />
+              Ability to share knowledge and contribute to team objectives.
+              <br /><br />
+              Collaborative approach to problem-solving and project
+              implementation.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-arrows-spin"></i>
+            <h2>Adaptability & Continuous Learning</h2>
+            <p>
+              Commitment to staying current with evolving cybersecurity threats
+              and technologies.
+              <br /><br />
+              Ability to quickly learn and apply new tools and techniques.
+              <br /><br />
+              Adaptable to changing priorities and requirements in dynamic
+              environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Achievements Section -->
     <div id="Achievements">
-        <div class="container">
-            <h1 class="Sub-title">My Achievements</h1>
-            <div class="Achievements-lists">
-                <div class="Achievement">
-                    <img src="Images/Achievement_1.png" alt="">
-                    <div class="layer">
-                        <h3>Etical Hacking</h3>
-                        <p>The ceritificate certifies that I do have knowledge and unsderstanding in based as Ethical
-                            hacker.<br>
-                            "I uncover vulnerabilities to strengthen defenses."<br>
-                            "Finding flaws to fortify security."<br>
-                            "Safeguarding systems through ethical probing."<br>
-                        </p>
-                        <a href="https://www.credly.com/badges/884ae70d-4256-4749-b9bf-0b4586d07433/public_url"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="Achievement">
-                    <img src="Images/Achievement_2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Networking</h3>
-                        <p>The ceritificate certifies that I do have the basic knowledge of inner working of network
-                            devices.<br>
-                            "I architect networks for seamless connectivity."<br>
-                            "Building bridges for digital connections."<br>
-                            "Optimizing networks for peak performance."<br>
-                        </p>
-                        <a href="https://www.credly.com/badges/78e78235-0e52-48f0-bf98-ab7485c91cfe/public_url"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="Achievement">
-                    <img src="Images/Achievemt_3.png" alt="">
-                    <div class="layer">
-                        <h3>Cyberscurity</h3>
-                        <p>The ceritificate certifies that I do have the basic knowledge of cybersecurity.<br>
-                            "I defend against digital threats."<br>
-                            "Protecting data with vigilant oversight."<br>
-                            "Securing systems with strategic <br>
-                        </p>
-                        <a href="https://www.credly.com/badges/ab960fc0-25e3-4420-b976-44dd489823a3/public_url"><i
-                                class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="Sub-title">My Achievements</h1>
+        <div class="Achievements-lists">
+          <div class="Achievement">
+            <img
+              src="Images/1.png"
+              alt="Ethical Hacking Certificate"
+            />
+            <div class="layer">
+              <h3>Ethical Hacking</h3>
+              <p>
+                This certificate validates my knowledge and understanding as an
+                Ethical Hacker.<br />
+                "I uncover vulnerabilities to strengthen defenses."<br />
+                "Finding flaws to fortify security."<br />
+                "Safeguarding systems through ethical probing."<br />
+              </p>
+              <a
+                href="https://www.credly.com/badges/884ae70d-4256-4749-b9bf-0b4586d07433/public_url"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
-            <a href="#" class="btn">See more</a>
+          </div>
+          <div class="Achievement">
+            <img src="Images/2.jpg" alt="Networking Certificate" />
+            <div class="layer">
+              <h3>Networking</h3>
+              <p>
+                This certificate validates my knowledge of network devices and
+                infrastructure.<br />
+                "I architect networks for seamless connectivity."<br />
+                "Building bridges for digital connections."<br />
+                "Optimizing networks for peak performance."<br />
+              </p>
+              <a
+                href="https://www.credly.com/badges/78e78235-0e52-48f0-bf98-ab7485c91cfe/public_url"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="Achievement">
+            <img src="Images/3.png" alt="Cybersecurity Certificate" />
+            <div class="layer">
+              <h3>Cybersecurity</h3>
+              <p>
+                This certificate validates my knowledge of cybersecurity
+                principles and practices.<br />
+                "I defend against digital threats."<br />
+                "Protecting data with vigilant oversight."<br />
+                "Securing systems with strategic defenses."<br />
+              </p>
+              <a
+                href="https://www.credly.com/badges/ab960fc0-25e3-4420-b976-44dd489823a3/public_url"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="#" class="btn">See more</a>
+      </div>
     </div>
-    <!------------Contacts---------->
+
+    <!-- Contact Section -->
     <div id="Contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="Sub-title">Contact Me</h1>
-                    <p>
-                        <a href="https://mailto:omollodev@proton.me"><i class="fa-solid fa-envelope"></i></a>
-                        omollodev@proton.me
-                    </p>
-                    <p>
-                        <a href="https://contacts.google.com/search/0713318602"></a><i class="fa-solid fa-phone"></i>
-                        +254713318602
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://twitter.com/DevTech87"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="https://github.com/Omollodev"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://www.linkedin.com/in/devox-omollo-7452b928b/"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="Images/My Resume.pdf" download class="btn btn2">Download My CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Enter your full name" required>
-                        <input type="email" name="Email" placeholder="Enter your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <h1 class="Sub-title">Contact Me</h1>
+        <div class="row">
+          <div class="contact-left">
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:omollodev@proton.me">devoxomollo@gmail.com</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+254713318602">+254713318602</a>
+            </p>
+            <div class="social-icons">
+              <a href="https://twitter.com/DevTech87"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="https://github.com/Omollodev"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/devox-omollo-7452b928b/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
+            <a href="Images/My Resume.pdf" download class="btn btn2"
+              >Download My CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter your full name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright <i class="fa-solid fa-copyright"></i> Divox.2025</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-solid fa-copyright"></i> devoxomollo
+          2025
+        </p>
+      </div>
     </div>
 
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links")
-        var tabcontents = document.getElementsByClassName("tab-contents")
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-links");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tabs")
-            }
-            event.currentTarget.classList.add("active-links");
-            document.getElementById(tabname).classList.add("active-tabs")
-        }
-
-    </script>
+    <a href="#Home" class="scroll-to-top" id="scrollBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-        var sidemeu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemeu.style.right = "0"
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-links");
         }
-        function closemenu() {
-            sidemeu.style.right = "-200px"
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tabs");
         }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tabs");
+      }
 
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-250px";
+      }
+
+      // Form submission
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwcRzOtMfqFePkMBBYZLljEa4a5korhyFGfhF6-hQoO-m7tv0h67eoIkYxGtwui4uN-/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message successfully submitted!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+
+      // Scroll to top button functionality
+      const scrollBtn = document.getElementById("scrollBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollBtn.style.opacity = "1";
+          scrollBtn.style.visibility = "visible";
+        } else {
+          scrollBtn.style.opacity = "0";
+          scrollBtn.style.visibility = "hidden";
+        }
+      });
     </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzPr_VLpM0zrd25YrA5jrgxeJGh9ZufQbCm33XIFOQdLnm3TAKSnogsSG42d6SWke2H/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message successfully submitted!"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 250)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-
-</body>
-
+  </body>
 </html>
+
